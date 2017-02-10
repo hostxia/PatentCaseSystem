@@ -1,8 +1,18 @@
-﻿<?xml version="1.0" ?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Application Title="PatentCaseSystem">
+  <BOModel>
+    <Class Name="PatentCaseSystem.Module.BusinessObjects.DBIPS4_PA.TCstmr_Client" Caption="客户信息" />
+    <Class Name="PatentCaseSystem.Module.BusinessObjects.DBIPS4_PA.TCstmr_ClientAddress" Caption="客户地址" />
+    <Class Name="PatentCaseSystem.Module.BusinessObjects.DBIPS4_PA.TCstmr_ClientChangeHistory" Caption="客户修改记录" />
+    <Class Name="PatentCaseSystem.Module.BusinessObjects.DBIPS4_PA.TCstmr_ClientConAddress" Caption="客户联系人地址" />
+    <Class Name="PatentCaseSystem.Module.BusinessObjects.DBIPS4_PA.TCstmr_ClientContact" Caption="客户联系人" />
+    <Class Name="PatentCaseSystem.Module.BusinessObjects.DBIPS4_PA.TCstmr_ClientFile" Caption="客户文件" />
+  </BOModel>
   <Options>
     <LayoutManagerOptions RequiredFieldMark="*" />
   </Options>
-  <Views>
-  </Views>
+  <SchemaModules>
+    <SchemaModule Name="CloneObjectModule" Version="16.2.3.0" IsNewNode="True" />
+    <SchemaModule Name="SystemModule" Version="16.2.3.0" IsNewNode="True" />
+  </SchemaModules>
 </Application>

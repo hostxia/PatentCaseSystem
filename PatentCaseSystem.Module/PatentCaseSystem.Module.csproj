@@ -119,6 +119,31 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BusinessObjects\IPSPModelCode\ConnectionHelper.cs" />
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_Client.cs" />
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_Client.Designer.cs">
+      <DependentUpon>TCstmr_Client.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientAddress.cs" />
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientAddress.Designer.cs">
+      <DependentUpon>TCstmr_ClientAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientChangeHistory.cs" />
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientChangeHistory.Designer.cs">
+      <DependentUpon>TCstmr_ClientChangeHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientConAddress.cs" />
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientConAddress.Designer.cs">
+      <DependentUpon>TCstmr_ClientConAddress.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientContact.cs" />
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientContact.Designer.cs">
+      <DependentUpon>TCstmr_ClientContact.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientFile.cs" />
+    <Compile Include="BusinessObjects\IPSPModelCode\TCstmr_ClientFile.Designer.cs">
+      <DependentUpon>TCstmr_ClientFile.cs</DependentUpon>
+    </Compile>
     <Compile Include="DatabaseUpdate\Updater.cs" />
     <Compile Include="Module.cs">
       <SubType>Component</SubType>
@@ -134,8 +159,13 @@
       <SubType>Designer</SubType>
       <DependentUpon>Module.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="BusinessObjects\IPSPModel.xpo" />
+    <None Include="BusinessObjects\IPSPModel.xpo.diagram">
+      <DependentUpon>IPSPModel.xpo</DependentUpon>
+    </None>
     <None Include="DatabaseUpdate\ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
@@ -150,6 +180,10 @@
   <ItemGroup>
     <None Include="FunctionalTests\sample.ets" />
     <None Include="Images\ReadMe.txt" />
+    <EmbeddedResource Include="Model.DesignedDiffs.Localization.zh-CN.xafml">
+      <DependentUpon>Model.DesignedDiffs.xafml</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
     <None Include="ReadMe.txt" />
   </ItemGroup>
   <ItemGroup>
